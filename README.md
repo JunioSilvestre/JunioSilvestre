@@ -1,92 +1,106 @@
 <div align="center">
 
-# Hi, I'm [Your Name] 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1a1a2e,100:58A6FF&height=120&section=header&animation=fadeIn" width="100%"/>
 
-**Frontend Software Engineer · UI Architect · Performance Obsessed**
+# Your Name
 
-*Building scalable, beautiful, and blazing-fast interfaces for global products.*
+**Senior Frontend Engineer · UI Architect · Performance Specialist**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white)](https://YOUR_PORTFOLIO.com)
-[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR@EMAIL.com)
-[![Dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/YOUR_USERNAME)
+*Turning complex problems into elegant, scalable interfaces — shipping at global scale.*
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://YOUR_PORTFOLIO.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:YOUR@EMAIL.com)
+[![Dev.to](https://img.shields.io/badge/Writing-0A0A0A?style=flat-square&logo=devdotto&logoColor=white)](https://dev.to/YOUR_USERNAME)
+[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME&color=58A6FF&style=flat-square&label=Profile+Views)
 
 </div>
 
----
-
-## 🧑‍💻 About Me
-
-👤 **Name:** Your Name  
-💼 **Role:** Frontend Software Engineer  
-📍 **Location:** Your City, Country 🌍  
-🏢 **Experience:** X+ years shipping production frontends at scale  
-
-🎯 **Focus:** UI Architecture · Performance Engineering · Design Systems  
-🛠️ **Stack:** TypeScript · React · Next.js · Node.js  
-
-**Currently:**  
-- 🔨 Building: High-performance web applications  
-- 🌱 Learning: React Server Components · Web Performance APIs · WebAssembly  
-- 💬 Open to: Senior / Staff roles at ambitious global companies  
-
-> *"Code is read more than written — write it beautifully."*
+<br/>
 
 ---
 
-## 🚀 Tech Stack
+## About
 
-**Core**
+Senior Frontend Engineer with **X+ years** delivering high-performance, accessible, and scalable web applications for millions of users. I work at the intersection of engineering rigor and product craft — bridging the gap between design intent and technical execution.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+I care deeply about **Core Web Vitals**, **design systems at scale**, and **developer experience**. I've led frontend architecture decisions in cross-functional teams, mentored engineers, and shipped features used by global audiences.
 
-**Styling & UI**
+Currently focused on: **React · TypeScript · Next.js · Performance Engineering**
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)
-![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radixui&logoColor=white)
+> *"Code is read far more than it is written. Optimise for the reader."*
 
-**State, Data & APIs**
-
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=react&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=fastapi&logoColor=white)
-
-**Tooling & Testing**
-
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
-![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
-![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
-![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=for-the-badge&logo=testinglibrary&logoColor=white)
-
-**Infrastructure & Workflow**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+<br/>
 
 ---
 
-## 📊 GitHub Stats
+## Impact & Focus Areas
+
+| Area | What I deliver |
+|---|---|
+| ⚡ **Performance Engineering** | Sub-second TTI, Core Web Vitals optimization, bundle analysis, lazy loading strategies |
+| 🏗️ **Frontend Architecture** | Scalable monorepos, design systems, component libraries adopted across entire organizations |
+| 🔒 **Code Quality & Reliability** | Strict TypeScript, TDD, automated testing pipelines, zero-regression releases |
+| 🎯 **Product Engineering** | Close collaboration with design, product, and backend — shipping the right thing, fast |
+| ♿ **Accessibility** | WCAG 2.1 AA compliance, semantic HTML, screen reader testing, keyboard-first UX |
+| 🚀 **Delivery at Scale** | CI/CD pipelines, feature flags, zero-downtime deploys, observability, rollback strategies |
+
+<br/>
+
+---
+
+## Tech Stack
+
+**Languages & Frameworks**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+**Styling & Design Systems**
+
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=flat-square&logo=radixui&logoColor=white)
+![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat-square&logo=storybook&logoColor=white)
+
+**State & Data**
+
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=react&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
+
+**Testing**
+
+![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=flat-square&logo=cypress&logoColor=white)
+![Testing Library](https://img.shields.io/badge/Testing_Library-E33332?style=flat-square&logo=testinglibrary&logoColor=white)
+
+**Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black)
+
+<br/>
+
+---
+
+## GitHub Stats
 
 <div align="center">
 
@@ -98,9 +112,11 @@
 
 </div>
 
+<br/>
+
 ---
 
-## 🌟 Featured Projects
+## Featured Work
 
 <div align="center">
 
@@ -109,58 +125,35 @@
 
 </div>
 
----
-
-## 💡 What I Bring to the Table
-
-| Strength | In practice |
-|---|---|
-| ⚡ **Performance Engineering** | Core Web Vitals, bundle splitting, lazy loading, sub-second TTI |
-| 🧱 **Scalable Architecture** | Design systems, monorepos, component libraries for entire teams |
-| 🔍 **Code Quality** | TDD, strict TypeScript, automated lint/format, thorough code review |
-| 🎯 **Product Thinking** | Bridge between design and engineering — ship the right thing fast |
-| 🌐 **Cross-team Collaboration** | Design, backend, product, DevOps — fluent in all directions |
-| 📦 **Delivery at Scale** | CI/CD, feature flags, zero-downtime deploys, rollback strategies |
-| ♿ **Accessibility** | WCAG 2.1 AA, semantic HTML, keyboard nav, screen reader testing |
+<br/>
 
 ---
 
-## 🔍 Skill Depth
+## Currently
 
-```text
-Frontend Architecture    ████████████████████  Expert
-React Ecosystem          ████████████████████  Expert
-TypeScript               ████████████████████  Expert
-Performance Optimization ███████████████░░░░░  Advanced
-Design Systems           ███████████████░░░░░  Advanced
-Testing Strategy         ██████████████░░░░░░  Advanced
-Node.js / Backend        ████████████░░░░░░░░  Intermediate
-DevOps / CI-CD           ████████████░░░░░░░░  Intermediate
-```
+- 🔨 **Building** — high-performance web applications at scale
+- 📖 **Reading** — *"A Philosophy of Software Design"* · John Ousterhout
+- 🌱 **Learning** — React Server Components · WebAssembly · Web Performance APIs
+- ✍️ **Writing** — engineering articles on [my blog](https://YOUR_PORTFOLIO.com/blog)
+- 🎯 **2025 goal** — meaningful contributions to major open-source projects
+
+<br/>
 
 ---
 
-## 📚 Currently
+## Open to Opportunities
 
-- 🔨 Building: high-performance web applications at scale
-- 📖 Reading: *"A Philosophy of Software Design"* — John Ousterhout
-- 🌱 Learning: React Server Components, WebAssembly, Web Performance APIs
-- ✍️ Writing: frontend engineering articles on [my blog](https://YOUR_PORTFOLIO.com/blog)
-- 🎯 2025 goal: contribute to major open-source frontend projects
+I'm selectively open to **Senior and Staff-level Frontend Engineering roles** at ambitious product companies — especially those obsessed with quality, scale, and craft.
 
----
+If you're building something that matters at global scale, let's talk.
 
-## 📬 Open to Opportunities
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
+[![Email](https://img.shields.io/badge/Send_an_Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:YOUR@EMAIL.com)
 
-> I'm open to **Senior and Staff-level Frontend roles** at product companies building at global scale.
-> Working on something ambitious? Let's talk.
-
-[![Connect on LinkedIn](https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
-
----
+<br/>
 
 <div align="center">
 
-*"The best interface is no interface. The best code is readable code."*
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,50:1a1a2e,100:0D1117&height=80&section=footer" width="100%"/>
 
 </div>
