@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # Hi, I'm [Your Name] 👋
@@ -18,25 +17,23 @@
 </div>
 
 ---
-```typescript
-const engineer = {
-  name        : "Your Name",
-  role        : "Frontend Software Engineer",
-  location    : "Your City, Country 🌍",
 
-  focus       : ["UI Architecture", "Performance Engineering", "Design Systems"],
-  stack       : ["TypeScript", "React", "Next.js", "Node.js"],
-  experience  : "X+ years shipping production frontends at scale",
+## 🧑‍💻 About Me
 
-  currently   : {
-    building  : "High-performance web applications",
-    learning  : ["React Server Components", "Web Performance APIs", "WebAssembly"],
-    open_to   : "Senior / Staff roles at ambitious global companies",
-  },
+👤 **Name:** Your Name  
+💼 **Role:** Frontend Software Engineer  
+📍 **Location:** Your City, Country 🌍  
+🏢 **Experience:** X+ years shipping production frontends at scale  
 
-  motto: "Code is read more than written — write it beautifully.",
-};
-```
+🎯 **Focus:** UI Architecture · Performance Engineering · Design Systems  
+🛠️ **Stack:** TypeScript · React · Next.js · Node.js  
+
+**Currently:**  
+- 🔨 Building: High-performance web applications  
+- 🌱 Learning: React Server Components · Web Performance APIs · WebAssembly  
+- 💬 Open to: Senior / Staff roles at ambitious global companies  
+
+> *"Code is read more than written — write it beautifully."*
 
 ---
 
