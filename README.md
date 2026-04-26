@@ -21,7 +21,7 @@
 
 ## 🧑‍💻 About Me
 
-```typescript
+typescript
 const engineer = {
   name        : "Your Name",
   role        : "Frontend Software Engineer",
@@ -39,7 +39,7 @@ const engineer = {
 
   motto: "Code is read more than written — write it beautifully.",
 };
-```
+
 
 ---
 
