@@ -51,7 +51,7 @@ I sit at the intersection of **platform, security, and backend engineering**: co
 | 📊 **Observability** | Metrics, logs, and traces wired end-to-end — answering "is the system healthy?" in seconds, not minutes |
 | 🗄️ **Database Architecture** | Partitioned PostgreSQL tables, BIGINT/UUID PK strategy, GiST indexing, automated partition maintenance |
 | 🔒 **Security & Zero Trust** | WAF, Zero Trust, Rate Limiting, Bot Protection, CSRF/Anti-Replay — 30+ hardened security modules |
-| ⚙️ **Automation & Idempotency** | Script-driven infra (Bash/Terraform) designed to be safely re-run — no manual drift, no snowflake servers |
+| 🐍 **Automation & Tooling** | Python (boto3/SDKs, CLIs, Kubernetes controllers) and Bash-driven infra, designed to be safely re-run — no manual drift, no snowflake servers |
 
 <br/>
 
@@ -97,12 +97,12 @@ I sit at the intersection of **platform, security, and backend engineering**: co
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 
-**⚙️ Backend & Languages**
+**⚙️ Backend, Automation & Languages**
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 
