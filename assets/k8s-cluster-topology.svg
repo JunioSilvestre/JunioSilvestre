@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="100%" height="220">
+  <defs>
+    <linearGradient id="k8sBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#131A24" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="k8sTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2496ED" />
+      <stop offset="50%" stop-color="#326CE5" />
+      <stop offset="100%" stop-color="#2EA043" />
+    </linearGradient>
+    <style>
+      .hdr { font: 700 13px 'Segoe UI', Ubuntu, monospace; fill: #E6EDF3; letter-spacing: 0.8px; }
+      .sub { font: 500 11px 'Segoe UI', Ubuntu, monospace; fill: #8B949E; }
+      .node-title { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; fill: #FFFFFF; }
+      .node-desc { font: 500 11px 'Segoe UI', Ubuntu, monospace; fill: #C9D1D9; }
+      .badge { font: 700 10px 'Segoe UI', Ubuntu, monospace; fill: #58A6FF; }
+      .traffic-flow {
+        stroke-dasharray: 6 6;
+        animation: flowAnim 1.2s linear infinite;
+      }
+      .pod-pulse {
+        animation: podGlow 3s ease-in-out infinite;
+      }
+      @keyframes flowAnim {
+        to { stroke-dashoffset: -12; }
+      }
+      @keyframes podGlow {
+        0%, 100% { stroke: #326CE5; }
+        50% { stroke: #58A6FF; }
+      }
+    </style>
+  </defs>
+
+  <!-- Card Frame -->
+  <rect x="2" y="2" width="856" height="216" rx="12" fill="url(#k8sBg)" stroke="#30363D" stroke-width="1.5" />
+  <rect x="2" y="2" width="856" height="3" rx="2" fill="url(#k8sTop)" />
+
+  <!-- Header -->
+  <text x="24" y="28" class="hdr">☸️ PRODUCTION KUBERNETES &amp; DOCKER CLUSTER TOPOLOGY</text>
+  <text x="836" y="28" text-anchor="end" class="sub">NON-ROOT · RBAC · NETWORK POLICIES · HELM</text>
+  <line x1="20" y1="40" x2="840" y2="40" stroke="#21262D" stroke-width="1" />
+
+  <!-- Left: Ingress & Security Gate -->
+  <g transform="translate(22, 62)">
+    <rect x="0" y="0" width="180" height="132" rx="10" fill="#0D1117" stroke="#2EA043" stroke-width="1.5" />
+    <text x="16" y="24" class="badge" style="fill:#3FB950;">EDGE &amp; INGRESS</text>
+    <text x="16" y="48" class="node-title">🛡️ Nginx Ingress</text>
+    <text x="16" y="70" class="node-desc">• TLS Termination</text>
+    <text x="16" y="88" class="node-desc">• Rate Limiting</text>
+    <text x="16" y="106" class="node-desc">• NetworkPolicies</text>
+  </g>
+
+  <!-- Animated Arrow 1 -->
+  <line x1="202" y1="128" x2="246" y2="128" stroke="#3FB950" stroke-width="2.5" class="traffic-flow" />
+
+  <!-- Center: Kubernetes Linux Worker Nodes Pool -->
+  <g transform="translate(246, 54)">
+    <rect x="0" y="0" width="368" height="148" rx="10" fill="#0D1117" stroke="#326CE5" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="16" y="22" class="badge">LINUX WORKER NODES // KUBERNETES RUNTIME</text>
+
+    <!-- Pod 1 -->
+    <g transform="translate(16, 34)">
+      <rect x="0" y="0" width="162" height="98" rx="8" fill="#161B22" stroke="#326CE5" stroke-width="1.5" class="pod-pulse" />
+      <circle cx="144" cy="18" r="4" fill="#3FB950">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="12" y="22" class="node-title">🐳 Docker Pod A</text>
+      <text x="12" y="44" class="sub">• Distroless / Alpine</text>
+      <text x="12" y="62" class="sub">• Readiness Probe OK</text>
+      <text x="12" y="80" class="sub">• HPA Auto-Scaled</text>
+    </g>
+
+    <!-- Pod 2 -->
+    <g transform="translate(190, 34)">
+      <rect x="0" y="0" width="162" height="98" rx="8" fill="#161B22" stroke="#326CE5" stroke-width="1.5" class="pod-pulse" />
+      <circle cx="144" cy="18" r="4" fill="#3FB950">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="12" y="22" class="node-title">☸️ Helm &amp; RBAC</text>
+      <text x="12" y="44" class="sub">• Least-Privilege SA</text>
+      <text x="12" y="62" class="sub">• Resource Quotas</text>
+      <text x="12" y="80" class="sub">• Rolling Updates</text>
+    </g>
+  </g>
+
+  <!-- Animated Arrow 2 -->
+  <line x1="614" y1="100" x2="656" y2="100" stroke="#58A6FF" stroke-width="2" class="traffic-flow" />
+  <line x1="614" y1="158" x2="656" y2="158" stroke="#F0883E" stroke-width="2" class="traffic-flow" />
+
+  <!-- Right Top: Backing Services -->
+  <g transform="translate(656, 56)">
+    <rect x="0" y="0" width="182" height="66" rx="8" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" />
+    <text x="14" y="20" class="badge">STATEFUL DATA</text>
+    <text x="14" y="40" class="node-title">🗄️ Postgres &amp; Redis</text>
+    <text x="14" y="56" class="sub">Persistent Volumes &amp; TLS</text>
+  </g>
+
+  <!-- Right Bottom: Observability -->
+  <g transform="translate(656, 134)">
+    <rect x="0" y="0" width="182" height="66" rx="8" fill="#0D1117" stroke="#F0883E" stroke-width="1.5" />
+    <text x="14" y="20" class="badge" style="fill:#F0883E;">OBSERVABILITY</text>
+    <text x="14" y="40" class="node-title">📊 Prom &amp; Grafana</text>
+    <text x="14" y="56" class="sub">Metrics · Logs · Alerts</text>
+  </g>
+</svg>

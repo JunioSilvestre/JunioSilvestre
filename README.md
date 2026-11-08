@@ -102,9 +102,15 @@ I combine deep hands-on **Linux systems administration** with modern infrastruct
 
 ---
 
-### 🐳 2. Docker & Kubernetes Runtime Interaction
+### 🐳 2. Docker & Kubernetes Cluster Architecture
 
-How containerized workloads, orchestration controls, and observability interact across Linux worker nodes in production:
+How containerized workloads, security policies, and observability operate across Linux worker nodes in production:
+
+<div align="center">
+  <img src="./assets/k8s-cluster-topology.svg" width="100%" alt="Kubernetes & Docker Cluster Topology" />
+</div>
+
+<br/>
 
 ```mermaid
 sequenceDiagram
@@ -191,16 +197,11 @@ flowchart LR
 
 ---
 
-### 📊 GitHub Activity & Engineering Telemetry
+### 📊 Engineering Telemetry & Focus
 
 <div align="center">
 
 <img src="./assets/activity-hud.svg" width="100%" alt="Animated Engineering Telemetry HUD" />
-
-<br/><br/>
-
-<img height="165em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JunioSilvestre&theme=github_dark" alt="GitHub Profile Summary" />
-<img height="165em" src="https://streak-stats.demolab.com/?user=JunioSilvestre&theme=radical&hide_border=true&background=0D1117&stroke=2EA043&ring=2EA043&fire=2EA043&currStreakLabel=2EA043" alt="GitHub Streak" />
 
 </div>
 
