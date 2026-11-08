@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 185" width="100%" height="185">
+  <defs>
+    <linearGradient id="tfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="tfAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#844FBA" />
+      <stop offset="50%" stop-color="#58A6FF" />
+      <stop offset="100%" stop-color="#2EA043" />
+    </linearGradient>
+    <style>
+      .hdr { font: 700 13px 'Segoe UI', Ubuntu, monospace; fill: #E6EDF3; letter-spacing: 0.8px; }
+      .box-title { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; fill: #FFFFFF; }
+      .box-sub { font: 500 11px 'Segoe UI', Ubuntu, monospace; fill: #8B949E; }
+      .box-tag { font: 700 10px 'Segoe UI', Ubuntu, monospace; fill: #A371F7; }
+      .flow-line {
+        stroke-dasharray: 6 6;
+        animation: dashMove 1.5s linear infinite;
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -12; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="856" height="181" rx="12" fill="url(#tfBg)" stroke="#30363D" stroke-width="1.5" />
+  <rect x="2" y="2" width="856" height="3" rx="2" fill="url(#tfAccent)" />
+
+  <!-- Header -->
+  <text x="24" y="28" class="hdr">🏗️ TERRAFORM (IaC) PROVISIONING &amp; STATE LIFECYCLE</text>
+  <text x="836" y="28" text-anchor="end" class="box-sub">IDEMPOTENT · MODULAR · MULTI-ENV</text>
+  <line x1="20" y1="40" x2="840" y2="40" stroke="#21262D" stroke-width="1" />
+
+  <!-- Animated Connector Lines -->
+  <line x1="210" y1="108" x2="255" y2="108" stroke="#844FBA" stroke-width="2" class="flow-line" />
+  <line x1="435" y1="108" x2="480" y2="108" stroke="#58A6FF" stroke-width="2" class="flow-line" />
+  <line x1="650" y1="108" x2="690" y2="108" stroke="#3FB950" stroke-width="2" class="flow-line" />
+
+  <!-- Stage 1: HCL Modules -->
+  <g transform="translate(22, 56)">
+    <rect x="0" y="0" width="188" height="104" rx="10" fill="#0D1117" stroke="#844FBA" stroke-width="1.5" />
+    <text x="16" y="24" class="box-tag">01 // DECLARATIVE CODE</text>
+    <text x="16" y="48" class="box-title">🧱 Terraform Modules</text>
+    <text x="16" y="68" class="box-sub">• Reusable HCL Modules</text>
+    <text x="16" y="85" class="box-sub">• TFLint &amp; Security Check</text>
+  </g>
+
+  <!-- Stage 2: Remote State & Lock -->
+  <g transform="translate(252, 56)">
+    <rect x="0" y="0" width="184" height="104" rx="10" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" />
+    <text x="16" y="24" class="box-tag" style="fill:#58A6FF;">02 // STATE ISOLATION</text>
+    <text x="16" y="48" class="box-title">🔒 Remote State</text>
+    <text x="16" y="68" class="box-sub">• Encrypted State Backend</text>
+    <text x="16" y="85" class="box-sub">• State Locking &amp; Drift</text>
+  </g>
+
+  <!-- Stage 3: Cloud Network & Compute -->
+  <g transform="translate(476, 56)">
+    <rect x="0" y="0" width="176" height="104" rx="10" fill="#0D1117" stroke="#F0883E" stroke-width="1.5" />
+    <text x="16" y="24" class="box-tag" style="fill:#F0883E;">03 // CLOUD INFRA</text>
+    <text x="16" y="48" class="box-title">☁️ AWS &amp; Azure</text>
+    <text x="16" y="68" class="box-sub">• VPC, Subnets &amp; IAM</text>
+    <text x="16" y="85" class="box-sub">• Linux Cloud-Init Nodes</text>
+  </g>
+
+  <!-- Stage 4: Production Runtime -->
+  <g transform="translate(688, 56)">
+    <rect x="0" y="0" width="150" height="104" rx="10" fill="#0F291E" stroke="#2EA043" stroke-width="1.5" />
+    <text x="14" y="24" class="box-tag" style="fill:#3FB950;">04 // READY</text>
+    <text x="14" y="48" class="box-title">☸️ K8s &amp; Linux</text>
+    <text x="14" y="68" class="box-sub" style="fill:#C9D1D9;">• Dev / Stage / Prod</text>
+    <text x="14" y="85" class="box-sub" style="fill:#C9D1D9;">• Zero Manual Drift</text>
+  </g>
+</svg>

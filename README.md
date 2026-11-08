@@ -129,6 +129,12 @@ sequenceDiagram
 
 ### 🏗️ 3. Terraform (IaC) & Cloud Infrastructure
 
+<div align="center">
+  <img src="./assets/terraform-iac-blueprint.svg" width="100%" alt="Terraform IaC Provisioning Blueprint" />
+</div>
+
+<br/>
+
 | Pillar | Implementation Approach | Engineering Impact |
 |---|---|---|
 | **🧱 Modular Terraform** | Reusable, parameterized Terraform modules for networking (VPC, subnets, routing), compute, IAM, and managed container clusters | Standardized, DRY infrastructure |
