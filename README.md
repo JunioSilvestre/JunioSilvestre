@@ -21,7 +21,7 @@
 
 **Linux Systems Engineer** focused on designing, automating, and operating **reliable, security-hardened Linux and cloud-native environments**.
 
-I combine deep hands-on **Linux systems administration** with modern DevOps engineering: automating repetitive operations with **Bash and Python**, containerizing and orchestrating workloads with **Docker and Kubernetes**, provisioning reproducible cloud infrastructure with **Terraform**, and enforcing quality through **CI/CD pipelines**.
+I combine deep hands-on **Linux systems administration** with modern infrastructure engineering: automating repetitive operations with **Bash and Python**, containerizing and orchestrating workloads with **Docker and Kubernetes**, provisioning reproducible cloud infrastructure with **Terraform**, and enforcing quality through **CI/CD pipelines**.
 
 > [!IMPORTANT]
 > **Engineering Philosophy:** *"If an operation has to be done twice, script it. If it runs in production, codify it in Terraform, isolate it in containers, validate it in CI/CD, and monitor it continuously."*
@@ -71,14 +71,24 @@ I combine deep hands-on **Linux systems administration** with modern DevOps engi
   <tr>
     <td width="50%" valign="top">
       <h4>🛡️ Linux Administration & Hardening</h4>
+      <p>
+        <img src="https://img.shields.io/badge/Systemd_%26_Kernel-2EA043?style=flat-square&logo=linux&logoColor=white" alt="Systemd" />
+        <img src="https://img.shields.io/badge/LVM_%26_Storage-161B22?style=flat-square&logo=linux&logoColor=2EA043" alt="Storage" />
+        <img src="https://img.shields.io/badge/SSH_%26_Firewall-EA4335?style=flat-square&logo=securityscorecard&logoColor=white" alt="Security" />
+      </p>
       <ul>
         <li><b>OS & Services:</b> Provisioning and managing Ubuntu, Debian, RHEL/Rocky, and Alpine servers; systemd units, timers, and journald diagnostics.</li>
         <li><b>Storage & Performance:</b> Filesystem management, LVM volume provisioning, memory/process inspection, and sysctl kernel tuning.</li>
-        <li><b>Network & Security:</b> SSH hardening, least-privilege access/sudo policies, firewall rules (UFW / nftables / iptables), TCP/IP & DNS troubleshooting, Nginx reverse proxy, and Tailscale mesh networking.</li>
+        <li><b>Network & Security:</b> SSH hardening, least-privilege sudo policies, firewall rules (UFW / nftables / iptables), TCP/IP & DNS troubleshooting, Nginx reverse proxy, and Tailscale mesh networking.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>🐚 Bash & Python Operational Tooling</h4>
+      <p>
+        <img src="https://img.shields.io/badge/GNU_Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+        <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Boto3_%26_CLIs-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Cloud SDK" />
+      </p>
       <ul>
         <li><b>Defensive Bash Scripting:</b> Idempotent scripts for server bootstrapping, automated backups, log rotation, certificate renewal, and service auto-recovery.</li>
         <li><b>Python Automation:</b> Custom CLI utilities, REST API integrations, Cloud SDK (Boto3) resource automation, and structured log/metric parsers.</li>
@@ -92,28 +102,25 @@ I combine deep hands-on **Linux systems administration** with modern DevOps engi
 
 ---
 
-### 🐳 2. Docker & Kubernetes Cluster Architecture
+### 🐳 2. Docker & Kubernetes Runtime Interaction
 
-Rather than running monolithic workloads directly on host OS packages, I package services into **hardened, minimal Docker images** and orchestrate them on **Kubernetes** with strict isolation, self-healing probes, and observability:
+How containerized workloads, orchestration controls, and observability interact across Linux worker nodes in production:
 
 ```mermaid
-flowchart TB
-    classDef edge fill:#0D1117,stroke:#58A6FF,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef k8s fill:#161B22,stroke:#326CE5,stroke-width:1.5px,color:#E6EDF3
-    classDef sec fill:#161B22,stroke:#2EA043,stroke-width:1.5px,color:#E6EDF3
-    classDef obs fill:#161B22,stroke:#F46800,stroke-width:1.5px,color:#E6EDF3
+sequenceDiagram
+    autonumber
+    actor Eng as 👨‍💻 Engineer / GitOps
+    participant K8s as ☸️ Kubernetes API & RBAC
+    participant Node as 🐧 Linux Node & Docker Runtime
+    participant Ing as 🛡️ Nginx Ingress (TLS)
+    participant Obs as 📊 Prometheus & Grafana
 
-    Traffic(["🌐 External Traffic / TLS"]) --> Ingress["🛡️ Nginx Ingress & Rate Limiting"]:::edge
-
-    subgraph Cluster["☸️ Kubernetes Production Cluster (Linux Worker Nodes)"]
-        direction TB
-        Ingress --> NetPol["🔒 RBAC · NetworkPolicies · Secrets"]:::sec
-        NetPol --> Pods["🐳 Hardened Multi-Stage Docker Containers<br/>Non-Root · Liveness/Readiness Probes · HPA"]:::k8s
-        Helm["📦 Helm Charts & ArgoCD GitOps"]:::k8s --> Pods
-    end
-
-    Pods --> Data["🗄️ Stateful Backing Services<br/>PostgreSQL · Redis"]:::sec
-    Pods --> Monitor["📊 Observability Stack<br/>Prometheus · Grafana · OpenTelemetry"]:::obs
+    Eng->>K8s: Apply Helm Chart / Manifest (Rolling Update)
+    K8s->>Node: Schedule Hardened Non-Root Container Pods
+    Node-->>K8s: Liveness & Readiness Probes Healthy
+    Ing->>Node: Route Validated External Traffic to Pods
+    Node->>Obs: Export Metrics, Logs & OpenTelemetry Traces
+    Obs-->>Eng: Real-Time Dashboards & Automated Alerts
 ```
 
 <br/>
@@ -122,18 +129,28 @@ flowchart TB
 
 ### 🏗️ 3. Terraform (IaC) & Cloud Infrastructure
 
-| Pillar | Implementation Approach | Key Focus |
+| Pillar | Implementation Approach | Engineering Impact |
 |---|---|---|
-| **🧱 Modular Terraform** | Reusable, parameterized Terraform modules for networking (VPC, subnets, routing), compute, IAM, and managed container clusters | Reusability & clean code |
-| **🔒 Remote State & Locking** | Centralized remote state storage with state locking and strict separation between **dev**, **staging**, and **production** environments | Team safety & zero state corruption |
-| **☁️ Cloud & Hybrid Ready** | Automated provisioning across **AWS** and **Azure**, combined with Linux cloud-init bootstrapping for immediate node readiness | Fast, repeatable recovery |
-| **🛡️ Policy & Validation** | Automated formatting, syntax validation, and security checks before any infrastructure plan is applied | Shift-left infrastructure security |
+| **🧱 Modular Terraform** | Reusable, parameterized Terraform modules for networking (VPC, subnets, routing), compute, IAM, and managed container clusters | Standardized, DRY infrastructure |
+| **🔒 Remote State & Locking** | Centralized remote state storage with state locking and strict isolation between **dev**, **staging**, and **production** environments | Zero state corruption & safe collaboration |
+| **☁️ Cloud & Hybrid Ready** | Automated provisioning across **AWS** and **Azure**, paired with Linux cloud-init bootstrapping for immediate server readiness | Fast, repeatable disaster recovery |
+| **🛡️ Policy & Validation** | Automated formatting, syntax validation, and security checks before any infrastructure plan is applied | Shift-left cloud security |
+
+<details>
+  <summary><b>🔎 Click to expand: Core Terraform & Cloud Provisioning Deliverables</b></summary>
+  <br/>
+  <ul>
+    <li><b>Network Foundation:</b> Multi-AZ VPCs, public/private subnet segmentation, NAT gateways, security groups, and least-privilege IAM roles.</li>
+    <li><b>Compute & Containers:</b> Auto-scaling Linux node groups, hardened base images, and managed Kubernetes cluster provisioning.</li>
+    <li><b>Lifecycle Management:</b> Importing legacy resources into Terraform state, drift detection, and automated plan verification inside Pull Requests.</li>
+  </ul>
+</details>
 
 <br/>
 
 ---
 
-### 🔁 4. CI/CD & Automated Delivery Pipeline
+### 🔁 4. CI/CD & Automated Delivery Workflow
 
 Every change — whether a **Bash script**, **Python tool**, **Terraform module**, or **Dockerized service** — passes through an automated **CI/CD pipeline**:
 
@@ -168,9 +185,13 @@ flowchart LR
 
 ---
 
-### 📊 GitHub Activity & Metrics
+### 📊 GitHub Activity & Engineering Telemetry
 
 <div align="center">
+
+<img src="./assets/activity-hud.svg" width="100%" alt="Animated Engineering Telemetry HUD" />
+
+<br/><br/>
 
 <img height="165em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JunioSilvestre&theme=github_dark" alt="GitHub Profile Summary" />
 <img height="165em" src="https://streak-stats.demolab.com/?user=JunioSilvestre&theme=radical&hide_border=true&background=0D1117&stroke=2EA043&ring=2EA043&fire=2EA043&currStreakLabel=2EA043" alt="GitHub Streak" />
@@ -185,12 +206,19 @@ flowchart LR
 
 <div align="center">
 
-<p>
-  I am open to <strong>Linux Systems Engineer · Infrastructure Engineer · DevOps / SRE</strong> roles where Linux reliability, Bash/Python automation, Terraform (IaC), and Kubernetes orchestration are core to the engineering culture.
-</p>
+<a href="mailto:jcs@jcscode.com">
+  <img src="./assets/open-to-work-cta.svg" width="100%" alt="Open to Opportunities Animated Card" />
+</a>
 
-<p>
-  <a href="mailto:jcs@jcscode.com"><img src="https://img.shields.io/badge/Contact_Me-jcs%40jcscode.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Me" /></a>
+<br/>
+
+<a href="mailto:jcs@jcscode.com">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=1200&color=3FB950&center=true&vCenter=true&width=680&lines=%24+ping+jcs%40jcscode.com+--+Ready+for+Linux+%26+DevOps+Challenges;%24+ssh+junio%40production+--+Zero-Downtime+%26+Idempotent+Infra;%24+kubectl+get+nodes+--+All+Clusters+Healthy+%26+Monitored" alt="Terminal Contact Animation" />
+</a>
+
+<p align="center">
+  <a href="mailto:jcs@jcscode.com"><img src="https://img.shields.io/badge/Send_Email-jcs%40jcscode.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Me" /></a>
+  <a href="mailto:jcs@jcscode.com?subject=Opportunity%20-%20Linux%20Systems%20%2F%20DevOps%20Engineer"><img src="https://img.shields.io/badge/Schedule_a_Chat-Available_Now-2EA043?style=for-the-badge&logo=linux&logoColor=white" alt="Schedule a Chat" /></a>
 </p>
 
 </div>

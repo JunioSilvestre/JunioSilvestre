@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 230" width="100%" height="230">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#238636" />
+      <stop offset="100%" stop-color="#3FB950" />
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F6FEB" />
+      <stop offset="100%" stop-color="#58A6FF" />
+    </linearGradient>
+    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6E40C9" />
+      <stop offset="100%" stop-color="#A371F7" />
+    </linearGradient>
+    <linearGradient id="barOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BD561D" />
+      <stop offset="100%" stop-color="#F0883E" />
+    </linearGradient>
+    <linearGradient id="scanLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2EA043" stop-opacity="0" />
+      <stop offset="50%" stop-color="#3FB950" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#2EA043" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      .title { font: 700 14px 'Segoe UI', Ubuntu, monospace; fill: #E6EDF3; letter-spacing: 1px; }
+      .sub { font: 600 11px 'Segoe UI', Ubuntu, monospace; fill: #8B949E; }
+      .metric-val { font: 700 18px 'Segoe UI', Ubuntu, monospace; fill: #3FB950; }
+      .metric-lbl { font: 600 10px 'Segoe UI', Ubuntu, monospace; fill: #8B949E; letter-spacing: 0.5px; }
+      .bar-label { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
+      .bar-pct { font: 700 12px 'Segoe UI', Ubuntu, monospace; fill: #3FB950; }
+      .pulse-dot { animation: pulse 2s infinite ease-in-out; }
+      .wave-line {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 600;
+        animation: drawWave 4s linear infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes drawWave {
+        0% { stroke-dashoffset: 600; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -600; }
+      }
+    </style>
+  </defs>
+
+  <!-- Main Card Background -->
+  <rect x="2" y="2" width="856" height="226" rx="12" fill="url(#bgGrad)" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Animated Top Scanning Line -->
+  <rect x="10" y="2" width="220" height="2" fill="url(#scanLineGrad)">
+    <animate attributeName="x" values="10;630;10" dur="6s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Header Bar -->
+  <circle cx="28" cy="26" r="5" fill="#3FB950" class="pulse-dot" />
+  <circle cx="28" cy="26" r="9" fill="none" stroke="#3FB950" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="r" values="5;12" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="45" y="30" class="title">ENGINEERING TELEMETRY &amp; CORE STACK FOCUS</text>
+  <text x="835" y="30" text-anchor="end" class="sub">NODE: JUNIO-SILVESTRE // STATUS: ACTIVE</text>
+  <line x1="20" y1="44" x2="840" y2="44" stroke="#21262D" stroke-width="1" />
+
+  <!-- Left Panel: Animated Focus Bars -->
+  <g transform="translate(24, 62)">
+    <!-- Bar 1 -->
+    <text x="0" y="12" class="bar-label">🐧 Linux Systems &amp; OS Hardening</text>
+    <text x="430" y="12" text-anchor="end" class="bar-pct">CORE</text>
+    <rect x="0" y="18" width="430" height="8" rx="4" fill="#21262D" />
+    <rect x="0" y="18" width="410" height="8" rx="4" fill="url(#barGreen)">
+      <animate attributeName="width" values="0;410" dur="1.5s" fill="freeze" />
+    </rect>
+
+    <!-- Bar 2 -->
+    <text x="0" y="50" class="bar-label">🐚 Bash &amp; Python Automation</text>
+    <text x="430" y="50" text-anchor="end" class="bar-pct" fill="#58A6FF">HIGH</text>
+    <rect x="0" y="56" width="430" height="8" rx="4" fill="#21262D" />
+    <rect x="0" y="56" width="395" height="8" rx="4" fill="url(#barBlue)">
+      <animate attributeName="width" values="0;395" dur="1.8s" fill="freeze" />
+    </rect>
+
+    <!-- Bar 3 -->
+    <text x="0" y="88" class="bar-label">🐳 Docker &amp; Kubernetes Orchestration</text>
+    <text x="430" y="88" text-anchor="end" class="bar-pct" fill="#A371F7">HIGH</text>
+    <rect x="0" y="94" width="430" height="8" rx="4" fill="#21262D" />
+    <rect x="0" y="94" width="380" height="8" rx="4" fill="url(#barPurple)">
+      <animate attributeName="width" values="0;380" dur="2.1s" fill="freeze" />
+    </rect>
+
+    <!-- Bar 4 -->
+    <text x="0" y="126" class="bar-label">🏗️ Terraform (IaC) &amp; CI/CD Pipelines</text>
+    <text x="430" y="126" text-anchor="end" class="bar-pct" fill="#F0883E">HIGH</text>
+    <rect x="0" y="132" width="430" height="8" rx="4" fill="#21262D" />
+    <rect x="0" y="132" width="385" height="8" rx="4" fill="url(#barOrange)">
+      <animate attributeName="width" values="0;385" dur="2.4s" fill="freeze" />
+    </rect>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="485" y1="54" x2="485" y2="210" stroke="#21262D" stroke-width="1" />
+
+  <!-- Right Panel: Live Telemetry Cards + Animated Heartbeat Wave -->
+  <g transform="translate(505, 58)">
+    <!-- Mini Card 1 -->
+    <rect x="0" y="0" width="160" height="58" rx="8" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+    <text x="14" y="22" class="metric-lbl">INFRASTRUCTURE</text>
+    <text x="14" y="44" class="metric-val">100% IaC</text>
+
+    <!-- Mini Card 2 -->
+    <rect x="172" y="0" width="160" height="58" rx="8" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+    <text x="186" y="22" class="metric-lbl">AUTOMATION</text>
+    <text x="186" y="44" class="metric-val" style="fill:#58A6FF;">Bash · Python</text>
+
+    <!-- Live Heartbeat Graph Box -->
+    <rect x="0" y="68" width="332" height="84" rx="8" fill="#0D1117" stroke="#21262D" stroke-width="1" />
+    <text x="14" y="86" class="metric-lbl">LIVE PIPELINE &amp; CLUSTER HEARTBEAT</text>
+    <circle cx="312" cy="82" r="4" fill="#3FB950" class="pulse-dot" />
+
+    <!-- Grid Lines -->
+    <line x1="12" y1="105" x2="320" y2="105" stroke="#161B22" stroke-width="1" />
+    <line x1="12" y1="125" x2="320" y2="125" stroke="#161B22" stroke-width="1" />
+
+    <!-- Animated ECG / Telemetry Wave -->
+    <path d="M 14 120 L 60 120 L 72 102 L 84 134 L 96 92 L 108 128 L 120 115 L 175 115 L 187 98 L 199 132 L 211 90 L 223 126 L 235 118 L 285 118 L 297 104 L 309 124 L 320 118"
+          fill="none" stroke="#238636" stroke-width="2" opacity="0.35" />
+    <path d="M 14 120 L 60 120 L 72 102 L 84 134 L 96 92 L 108 128 L 120 115 L 175 115 L 187 98 L 199 132 L 211 90 L 223 126 L 235 118 L 285 118 L 297 104 L 309 124 L 320 118"
+          fill="none" stroke="#3FB950" stroke-width="2.5" stroke-linecap="round" class="wave-line" />
+  </g>
+</svg>

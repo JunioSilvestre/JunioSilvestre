@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 190" width="100%" height="190">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#111820" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2EA043">
+        <animate attributeName="stop-color" values="#2EA043;#58A6FF;#2EA043" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#58A6FF">
+        <animate attributeName="stop-color" values="#58A6FF;#2EA043;#58A6FF" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#2EA043">
+        <animate attributeName="stop-color" values="#2EA043;#58A6FF;#2EA043" dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <style>
+      .badge-text { font: 700 11px 'Segoe UI', Ubuntu, monospace; fill: #3FB950; letter-spacing: 1.2px; }
+      .headline { font: 700 22px 'Segoe UI', Ubuntu, sans-serif; fill: #FFFFFF; }
+      .desc { font: 400 14px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
+      .pill-text { font: 600 12px 'Segoe UI', Ubuntu, monospace; fill: #E6EDF3; }
+      .cursor { animation: blink 1s step-end infinite; }
+      .float-pill-1 { animation: glowPulse 3s infinite ease-in-out 0s; }
+      .float-pill-2 { animation: glowPulse 3s infinite ease-in-out 0.7s; }
+      .float-pill-3 { animation: glowPulse 3s infinite ease-in-out 1.4s; }
+      .float-pill-4 { animation: glowPulse 3s infinite ease-in-out 2.1s; }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes glowPulse {
+        0%, 100% { stroke: #30363D; }
+        50% { stroke: #3FB950; }
+      }
+    </style>
+  </defs>
+
+  <!-- Glowing Animated Border Card -->
+  <rect x="2" y="2" width="856" height="186" rx="14" fill="url(#cardBg)" stroke="url(#borderGlow)" stroke-width="2" />
+
+  <!-- Status Pill Top Center -->
+  <g transform="translate(275, 20)">
+    <rect x="0" y="0" width="310" height="26" rx="13" fill="#0F291E" stroke="#2EA043" stroke-width="1" />
+    <circle cx="18" cy="13" r="4.5" fill="#3FB950" />
+    <circle cx="18" cy="13" r="4.5" fill="none" stroke="#3FB950" stroke-width="1.5">
+      <animate attributeName="r" values="4.5;10" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="34" y="17" class="badge-text">AVAILABLE FOR NEW OPPORTUNITIES</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="430" y="76" text-anchor="middle" class="headline">
+    Linux Systems Engineer · Infrastructure · DevOps / SRE
+  </text>
+
+  <!-- Subtitle Description -->
+  <text x="430" y="103" text-anchor="middle" class="desc">
+    Ready to build resilient Linux environments, Bash &amp; Python automation, Terraform IaC, and Kubernetes clusters.
+  </text>
+
+  <!-- Animated Role / Stack Pills -->
+  <g transform="translate(68, 124)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="168" height="34" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5" class="float-pill-1" />
+    <text x="84" y="21" text-anchor="middle" class="pill-text">🐧 Linux Reliability</text>
+
+    <!-- Pill 2 -->
+    <rect x="182" y="0" width="172" height="34" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5" class="float-pill-2" />
+    <text x="268" y="21" text-anchor="middle" class="pill-text">🐚 Bash &amp; Python</text>
+
+    <!-- Pill 3 -->
+    <rect x="368" y="0" width="172" height="34" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5" class="float-pill-3" />
+    <text x="454" y="21" text-anchor="middle" class="pill-text">🏗️ Terraform (IaC)</text>
+
+    <!-- Pill 4 -->
+    <rect x="554" y="0" width="172" height="34" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1.5" class="float-pill-4" />
+    <text x="640" y="21" text-anchor="middle" class="pill-text">☸️ Docker &amp; K8s</text>
+  </g>
+</svg>
